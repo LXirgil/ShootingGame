@@ -9,7 +9,7 @@ public class Player extends Character implements KeyListener{
 		f.setColor(0, 128, 0);
 		f.fillRect(x, y+20, 30, 10);
 		f.setColor(200, 200, 200);
-		f.fillRect(+10, y, 10, 30);
+		f.fillRect(x+10, y, 10, 30);
 	}
 	
 	public void move() {
@@ -35,7 +35,8 @@ public class Player extends Character implements KeyListener{
 		}
 		if(e.getKeyCode()==KeyEvent.VK_SPACE) {
 			GameWorld.playerBullets.add(new PlayerBullet(x,y,0,-10));
-			
+			GameWorld.playerBullets.add(new PlayerBullet(x,y,4,-8));
+			GameWorld.playerBullets.add(new PlayerBullet(x,y,4,-8));
 			System.out.println("弾の数"+ GameWorld.playerBullets.size());
 		}
 		
