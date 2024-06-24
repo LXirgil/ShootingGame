@@ -1,0 +1,7 @@
+diff a/Shooting/src/CurveEnemy.java b/Shooting/src/CurveEnemy.java	(rejected hunks)
+@@ -12,5 +12,4 @@
+ 				x--;
+ 			}
+ 		}
+-	        f.setColor(0, 0, 0);
+ }
